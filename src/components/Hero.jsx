@@ -38,7 +38,7 @@ const Hero = () => {
 
               {/* Storyset SVG */}
               <img
-                src="/src/assets/food-delivery.svg"
+                src="/food-delivery.svg"
                 alt="Food delivery illustration"
                 className="relative w-full h-full object-contain"
               />
