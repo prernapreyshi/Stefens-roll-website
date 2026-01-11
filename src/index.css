@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 25 100% 95%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    --primary: 16 91% 72%;
+    --primary-foreground: 220 13% 18%;
+
+    --secondary: 30 100% 98%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 25 60% 94%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 16 85% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 40% 90%;
+    --input: 25 40% 90%;
+    --ring: 16 91% 72%;
+
+    --radius: 0.75rem;
+
+    /* Custom QuickRolls tokens */
+    --card-shadow: 0 2px 12px -2px hsl(220 13% 18% / 0.06);
+    --card-shadow-hover: 0 4px 20px -4px hsl(220 13% 18% / 0.10);
+    --hero-bg: 30 100% 98%;
+  }
+
+  .dark {
+    --background: 220 13% 10%;
+    --foreground: 25 100% 95%;
+
+    --card: 220 13% 14%;
+    --card-foreground: 25 100% 95%;
+
+    --popover: 220 13% 14%;
+    --popover-foreground: 25 100% 95%;
+
+    --primary: 16 91% 72%;
+    --primary-foreground: 220 13% 18%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 25 100% 95%;
+
+    --muted: 220 13% 20%;
+    --muted-foreground: 25 40% 70%;
+
+    --accent: 16 85% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 22%;
+    --input: 220 13% 22%;
+    --ring: 16 91% 72%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-hero {
+    background: hsl(var(--hero-bg));
+  }
+  
+  .shadow-card {
+    box-shadow: var(--card-shadow);
+  }
+  
+  .shadow-card-hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 1px 3px 0 hsl(220 13% 18% / 0.04), 0 1px 2px -1px hsl(220 13% 18% / 0.04);
+  }
+}
