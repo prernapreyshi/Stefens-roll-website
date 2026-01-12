@@ -6,11 +6,11 @@ import RollsGrid from "@/components/RollsGrid";
 import Franchise from "@/components/Franchise";
 import Footer from "@/components/Footer";
 import FloatingCartButton from "@/components/FloatingCartButton";
-import { useToast } from "@/hooks/use-toast";
+
 
 const Index = ({ cartItems, setCartItems }) => {
   const [activeCategory, setActiveCategory] = useState("all");
-  const { toast } = useToast();
+ 
 
   const handleAddToCart = (roll) => {
     setCartItems((prev) => {
@@ -27,10 +27,7 @@ const Index = ({ cartItems, setCartItems }) => {
       return [...prev, { ...roll, quantity: 1 }];
     });
 
-    toast({
-      title: "Added to cart! 🎉",
-      description: `${roll.name} added to cart`,
-    });
+    
   };
 
   // ✅ Total cart count

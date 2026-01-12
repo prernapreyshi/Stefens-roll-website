@@ -4,15 +4,14 @@ import CategoryTabs from "@/components/CategoryTabs";
 import RollsGrid from "@/components/RollsGrid";
 import Footer from "@/components/Footer";
 import FloatingCartButton from "@/components/FloatingCartButton";
-import { useToast } from "@/hooks/use-toast";
 
 const Menu = ({ cartItems, setCartItems }) => {
   const [activeCategory, setActiveCategory] = useState("all");
-  const { toast } = useToast();
 
   const handleAddToCart = (roll) => {
     setCartItems((prev) => {
       const existing = prev.find((item) => item.id === roll.id);
+
       if (existing) {
         return prev.map((item) =>
           item.id === roll.id
@@ -20,12 +19,8 @@ const Menu = ({ cartItems, setCartItems }) => {
             : item
         );
       }
-      return [...prev, { ...roll, quantity: 1 }];
-    });
 
-    toast({
-      title: "Added to cart!",
-      description: `${roll.name} added to cart`,
+      return [...prev, { ...roll, quantity: 1 }];
     });
   };
 
@@ -52,7 +47,7 @@ const Menu = ({ cartItems, setCartItems }) => {
         <Footer />
       </main>
 
-      {/* ✅ REQUIRED */}
+      {/* ✅ Floating cart works on mobile */}
       <FloatingCartButton cartCount={cartCount} />
     </div>
   );
