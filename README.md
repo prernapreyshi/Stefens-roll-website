@@ -1,4 +1,4 @@
-# Stefens Rolls 🍽️
+# Stefens Rolls 
 
 A modern and responsive food ordering website for fresh rolls, wraps, and frankies, built with React and Vite.
 
