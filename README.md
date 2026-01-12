@@ -4,7 +4,7 @@ A modern and responsive food ordering website for fresh rolls, wraps, and franki
 
 ---
 
-## ✨ Features
+## Features
 - Clean & premium UI
 - Fast performance with Vite
 - Fully responsive design
@@ -14,7 +14,7 @@ A modern and responsive food ordering website for fresh rolls, wraps, and franki
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - React.js
 - Vite
 - Tailwind CSS
@@ -22,7 +22,7 @@ A modern and responsive food ordering website for fresh rolls, wraps, and franki
 
 ---
 
-## ⚙️ Setup
+##  Setup
 ```bash
 git clone https://github.com/prernapreyshi/Stefens-roll-website.git
 cd Stefens-roll-website
