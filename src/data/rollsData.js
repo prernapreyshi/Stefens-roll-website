@@ -18,7 +18,6 @@ export const rollsData = [
     image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&h=300&fit=crop",
     isVeg: true,
   },
-  
 
   // Egg
   {
@@ -31,9 +30,7 @@ export const rollsData = [
     isVeg: false,
   },
   
-
-  // Chicken
-  
+// Chicken  
   {
     id: 11,
     name: "Chicken Rolls",
@@ -45,7 +42,6 @@ export const rollsData = [
   },
   
   // Cheese
- 
   {
     id: 16,
     name: "Double Egg Roll",
